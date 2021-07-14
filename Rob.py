@@ -1,8 +1,11 @@
-from chatterbot import ChatBot
-from chatterbot.trainers import ListTrainer
-import speech_recognition as sr
-from gtts import gTTS
-from playsound import playsound
+try:
+    from chatterbot import ChatBot
+    from chatterbot.trainers import ListTrainer
+    import speech_recognition as sr
+    from gtts import gTTS
+    from playsound import playsound
+except ImportError:
+    print("Erro ao importar módulo")
 
 
 def ouvir_som():
